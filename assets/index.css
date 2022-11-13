@@ -16,16 +16,19 @@ body {
   height: 140px;
 }
 
+.item_Nav {
+  margin-bottom: 30px;
+}
+
 .navbar-nav {
   padding-top: 80px;
   transform: translate(-24%, 1%);
 }
 
 .search-navBox {
-  top: 50%;
+  top: 40%;
   left: 49%;
   transform: translate(-50%, -50%);
-  margin-top: 0px;
   position: absolute;
   padding-left: 300px;
   height: 35px;
@@ -255,6 +258,11 @@ body {
   margin-top: -60px;
 }
 
+#footer .container .row .col-md-3 div ul li a:hover {
+  transition: 0.5s;
+  font-size: 16.5px;
+}
+
 #footer2 {
   background-color: #000;
   height: 60px;
@@ -331,11 +339,78 @@ body {
   font-style: italic;
 }
 
+/* Halaman 2 */
+/* 1. paginations */
+.btn_pagemenuleft {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+
+.btn_pagemenuright {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+}
+
+.btn_pageitem {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+}
+
+.btn_pageitem:hover {
+  background-color: #f5f5f5;
+  transition: 0.2s;
+}
+
+.btn_pageitem.Active {
+  background-color: #f5f5f5;
+}
+
+/* Item 2 */
+
+#hal2_item2 {
+  background-color: #ebf4f1;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  height: 400px;
+}
+
+.subs_email {
+  border-radius: 30px;
+  width: 80px;
+  font-size: 15px;
+  border: 2px solid #000;
+  height: 40px;
+  width: 300px;
+  padding: 0 10px;
+  color: #000;
+  font-style: italic;
+  background-color: #ebf4f1;
+}
+
 /* Responsive */
 
 @media (min-width: 1975px) {
   .img_grup179 {
     margin-top: -170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .search-navBox {
+    width: 1050px;
+  }
+  .img_grup179 {
+    margin-top: -120px;
   }
 }
 
@@ -351,7 +426,7 @@ body {
   }
 
   .card_right {
-    margin-top: -155px;
+    margin-top: -160px;
   }
   .h3_item3 {
     width: 90%;
@@ -378,6 +453,9 @@ body {
 @media (max-width: 992px) {
   .navbar {
     height: auto;
+  }
+  .item_Nav {
+    margin-bottom: 0px;
   }
   .img_item1 {
     width: 100%;
@@ -432,7 +510,7 @@ body {
     height: auto;
   }
   .card_right {
-    margin-top: -120px;
+    margin-top: -0px;
   }
   #item3 {
     height: 700px;
@@ -490,6 +568,9 @@ body {
   .modal-dialog {
     padding-left: 0px;
   }
+  .subs_email {
+    width: 200px;
+  }
 }
 
 @media (max-width: 398px) {
@@ -511,5 +592,8 @@ body {
   }
   #item3 {
     height: 900px;
+  }
+  .subs_email {
+    width: 150px;
   }
 }
