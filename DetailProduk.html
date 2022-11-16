@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Css -->
     <link rel="stylesheet" href="./assets/index.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   </head>
@@ -138,96 +140,223 @@
 
     <!--Akhir Sidebar-->
 
-    <!-- Filters Item -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <form action="">
-          <div class="mt-4 px-4">
-            <h6 class="mt-5 fw-normal">Categories</h6>
-            <select name="" id="" class="select_form mt-3">
-              <option value="">All</option>
-              <option value="">Fonts</option>
-              <option value="">Graphics</option>
-              <option value="">Templates</option>
-              <option value="">Blogs</option>
-              <option value="">Free Asset</option>
-            </select>
+    <!-- Detail Produk item 1  -->
+    <div id="dp_item1">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-6 p-2">
+            <div class="dp1_tittle p-2">
+              <h6>
+                Categories
+                <a class="fw-normal text-dark text-decoration-none px-1">Fonts - Script</a>
+              </h6>
+            </div>
+            <div class="dp1_img p-2">
+              <div class="card text-decoration-none border-0">
+                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
+                <a href="" class="dp_cardlove">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
+                      <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
+                      />
+                    </svg>
+                  </p>
+                </a>
+                <a href="" class="dp_bookmark" style="margin: 20px; top: 15%">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="38%">
+                      <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+                      />
+                    </svg>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="dp_carousel p-2">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/Asset Page/produk image/Hunter Killer.png" alt="" width="100%" class="rounded-4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" class="rounded-4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Asset Page/produk image/Satonda.jpg" alt="" width="100%" class="rounded-4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Asset Page/produk image/Satonda.jpg" alt="" width="100%" class="rounded-4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" class="rounded-4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" class="rounded-4" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- Swiper -->
+            </div>
+            <div class="dp_descripsi p-2">
+              <p>
+                Introducing the Strike Destiny Font,handcrafted brush fonts! A bold, free-flowing and confident brush font. nStrike Destiny is a script font with a stroke style.This font is suitable for use from handwritten quotes, to
+                product packaging, merchandise and branding projects.
+              </p>
+              <p>Complete with Uppercase and Lowercase, Numberic, Ligature, and coupled with this sweep alternative it will look very impressive.</p>
+            </div>
+            <div class="d-flex justify-content-between p-2">
+              <div>
+                <h6 class="fw-normal">Preview Font</h6>
+              </div>
+              <div>
+                <a href="" class="text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="" viewBox="0 0 84.286 59" class="mb-1 pe-1">
+                    <path
+                      id="cloud-arrow-down-solid"
+                      d="M18.964,91a18.969,18.969,0,0,1-6.3-36.862q-.026-.533-.026-1.067A21.073,21.073,0,0,1,51.981,42.562,11.713,11.713,0,0,1,59,40.429,12.571,12.571,0,0,1,71.643,53.071a12.784,12.784,0,0,1-.843,4.557A16.856,16.856,0,0,1,67.429,91ZM39.9,79.424a2.861,2.861,0,0,0,4.359,0L54.8,68.888a2.861,2.861,0,0,0,0-4.359,3.044,3.044,0,0,0-4.359,0L45.3,69.678V52.018a3.161,3.161,0,1,0-6.321,0V69.678l-5.255-5.149a3.082,3.082,0,0,0-4.359,4.359Z"
+                      transform="translate(0 -32)"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="text-decoration-none text-dark"> Download Demo Font </a>
+              </div>
+            </div>
+            <div class="p-2">
+              <form action="" class="d-flex justify-content-between">
+                <div>
+                  <input type="text" placeholder="Type Here" class="inp_typeher" />
+                </div>
+                <div>
+                  <select name="" id="" class="dp_select">
+                    <option value="">24 pt</option>
+                    <option value="">28 pt</option>
+                    <option value="">32 pt</option>
+                    <option value="">35 pt</option>
+                  </select>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="mt-4 px-4">
-            <!-- $1 - $10 -->
-            <input type="checkbox" id="" name="" value="" />
-            <label for=""> $1 - $10</label><br />
-            <!--Akhir $1 - $10 -->
+          <div class="col-lg-6 p-2">
+            <div class="dp_rightitem">
+              <div class="dp_link">
+                <a class="text-decoration-none text-dark" href="">Share</a>
+                <a href="" class="text-decoration-none text-dark px-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="16px">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="text-decoration-none text-dark px-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 28.954 22.53">
+                    <path
+                      id="link-solid"
+                      d="M25.267,26.162A6.944,6.944,0,0,1,35.8,35.131l-.053.077a1.534,1.534,0,0,1-2.5-1.782l.053-.077a3.863,3.863,0,0,0-5.874-4.978l-5.376,5.38a3.861,3.861,0,0,0,4.973,5.874l.077-.1a1.577,1.577,0,0,1,2.137.4,1.534,1.534,0,0,1-.355,2.142l-.077.053a6.928,6.928,0,0,1-8.925-10.536ZM39.4,38.087a6.928,6.928,0,0,1-10.536-8.926l.053-.077a1.534,1.534,0,0,1,2.5,1.782l-.053.077a3.863,3.863,0,0,0,5.874,4.978l5.376-5.38a3.861,3.861,0,0,0-4.973-5.874l-.077.053a1.567,1.567,0,0,1-2.137-.356,1.531,1.531,0,0,1,.355-2.139l.077-.054a6.927,6.927,0,0,1,8.926,10.535Z"
+                      transform="translate(-17.858 -20.881)"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="text-decoration-none text-dark px-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 25.091 25.091">
+                    <path
+                      id="square-facebook-brands"
+                      d="M22.4,32H2.688A2.688,2.688,0,0,0,0,34.688V54.4a2.688,2.688,0,0,0,2.688,2.688h7.687V48.56H6.847V44.545h3.528v-3.06c0-3.481,2.072-5.4,5.246-5.4a21.375,21.375,0,0,1,3.109.271v3.416H16.979a2.008,2.008,0,0,0-2.264,2.169v2.607h3.852l-.616,4.015H14.716v8.53H22.4A2.688,2.688,0,0,0,25.091,54.4V34.688A2.688,2.688,0,0,0,22.4,32Z"
+                      transform="translate(0 -32)"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="text-dark text-decoration-none px-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 25.742 25.742">
+                    <path
+                      id="whatsapp"
+                      d="M21.887,35.741A12.76,12.76,0,0,0,1.81,51.134L0,57.742l6.763-1.776a12.717,12.717,0,0,0,6.1,1.551h.006a12.675,12.675,0,0,0,9.021-21.778ZM12.865,55.369a10.584,10.584,0,0,1-5.4-1.477l-.385-.23L3.068,54.714,4.137,50.8l-.253-.4a10.623,10.623,0,1,1,19.7-5.637A10.721,10.721,0,0,1,12.865,55.369Zm5.815-7.941c-.316-.161-1.885-.931-2.178-1.034s-.506-.161-.718.161-.822,1.034-1.011,1.253-.373.241-.69.08A8.676,8.676,0,0,1,9.745,44.1c-.328-.563.328-.523.937-1.741a.591.591,0,0,0-.029-.557c-.08-.161-.718-1.73-.983-2.367-.259-.621-.523-.534-.718-.546s-.4-.011-.609-.011a1.181,1.181,0,0,0-.85.4,3.582,3.582,0,0,0-1.115,2.66,6.244,6.244,0,0,0,1.3,3.3,14.243,14.243,0,0,0,5.447,4.815c2.023.873,2.816.948,3.827.8A3.265,3.265,0,0,0,19.1,49.324a2.666,2.666,0,0,0,.184-1.517C19.209,47.664,19,47.583,18.681,47.428Z"
+                      transform="translate(0 -32)"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="dp_tittleprdk">
+                <h1 style="font-size: 45px; font-weight: normal" data-aos="zoom-in">Anbella Script Font Luxury Signature</h1>
+              </div>
+              <div class="dp_license mt-3">
+                <p>Choose License</p>
+                <form action="">
+                  <select name="" id="" class="dp_comercil mt-2">
+                    <option value="">Commerrcial $21 USD</option>
+                    <option value="">Commerrcial $31 USD</option>
+                    <option value="">Commerrcial $41 USD</option>
+                    <option value="">Commerrcial $51 USD</option>
+                  </select>
+                  <div class="d-flex mt-3">
+                    <div class="dp_btnadcart">
+                      <button type="submit" class="mt-3 btn_adcart">Add To Cart</button>
+                    </div>
+                    <div class="dp_btnbuy">
+                      <button type="submit" class="mt-3 btn_Buy">
+                        Buy Now
 
-            <!-- $10 - $25 -->
-            <input class="mt-2" type="checkbox" id="" name="" value="" />
-            <label for=""> $10 - $25</label><br />
-            <!--Akhir $10 - $25 -->
-
-            <!-- $25 - $50 -->
-            <input class="mt-2" type="checkbox" id="" name="" value="" />
-            <label for=""> $25 - $50</label><br />
-            <!--Akhir $25 - $50 -->
-
-            <!-- $50+ -->
-            <input class="mt-2" type="checkbox" id="" name="" value="" />
-            <label for=""> $50+</label>
-            <!--Akhir $50+ -->
-          </div>
-          <div class="px-4" style="margin-top: -30px">
-            <h6 class="mt-5 fw-normal">Theme</h6>
-            <select name="" id="" class="select_form mt-3">
-              <option value="">New Year</option>
-              <option value="">Fonts</option>
-              <option value="">Graphics</option>
-              <option value="">Templates</option>
-              <option value="">Blogs</option>
-              <option value="">Free Asset</option>
-            </select>
-          </div>
-        </form>
-        <div class="text-center">
-          <button type="submit" class="mt-5 btn_modallogin">Apply</button>
-        </div>
-      </div>
-    </div>
-    <!--Akhir Filters Item -->
-
-    <!-- item 1 -->
-    <div id="prdk_item1">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-6" data-aos="zoom-in">
-            <h3 class="fw-normal" style="color: #5a5a5a">Showing results for <a class="fw-semibold text-decoration-none" style="color: #5a5a5a">mockup</a></h3>
-          </div>
-          <div class="col-6 p-0 text-end" data-aos="zoom-in">
-            <div style="padding-right: 30px">
-              <a href="" class="text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" style="margin-bottom: 5px">
-                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                  <path
-                    d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"
-                  />
-                </svg>
-              </a>
-              <a href="" class="fw-normal text-dark text-decoration-none ps-1 fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Filters </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 25.964 30.671">
+                          <path
+                            id="paypal-brands"
+                            d="M7.611,47.33c-.237,1.3-1.177,7.351-1.454,9.063-.02.122-.068.169-.2.169H.909a.822.822,0,0,1-.818-.94L4.054,30.47a1.374,1.374,0,0,1,1.353-1.143c10.3,0,11.166-.25,13.8.771,4.065,1.576,4.437,5.377,2.976,9.489-1.454,4.234-4.9,6.053-9.475,6.107-2.935.047-4.7-.473-5.093,1.637ZM24.228,37.6c-.122-.088-.169-.122-.2.088a15.829,15.829,0,0,1-.6,2.272c-2.7,7.7-10.178,7.027-13.831,7.027a.68.68,0,0,0-.737.636C7.334,57.116,7.029,59.1,7.029,59.1a.72.72,0,0,0,.717.872h4.295a1.213,1.213,0,0,0,1.177-1.008c.047-.365-.074.413.974-6.175.311-1.488.967-1.332,1.982-1.332,4.8,0,8.549-1.948,9.664-7.595.44-2.354.311-4.829-1.61-6.263Z"
+                            transform="translate(-0.083 -29.3)"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="dp_owner mt-5">
+                <p data-aos="zoom-in">Shop Owner</p>
+                <div class="d-flex">
+                  <div class="p-4 mt-4">
+                    <a href="./Profil.html" class="text-decoration-none text-dark">
+                      <img src="./assets/Asset Page/profil image/photo profile nestype.jpg" alt="" class="dp_imgprofil" width="100px" />
+                    </a>
+                  </div>
+                  <div class="dp_profilname p-4 mt-2">
+                    <a href="./Profil.html" class="text-decoration-none text-dark">
+                      <h4 class="fw-semibold" data-aos="zoom-in">Nestype</h4>
+                    </a>
+                    <form action="">
+                      <input type="text" placeholder="Massage Nestype" class="dp_messageowner mt-2" />
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+          <div class="col">
+            <h1 data-aos="zoom-in">Type Here</h1>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <h4 data-aos="zoom-in">Stay With Nestype</h4>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
+              <a href="" class="text-decoration-none text-dark">
                 <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
               </a>
-              <a href="./DetailProduk.html" class="card_harga">
+              <a href="" class="card_harga">
                 <p>$120</p>
               </a>
-              <a href="./DetailProduk.html" class="card_love">
+              <a href="" class="card_love">
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -240,15 +369,15 @@
               <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
+              <a href="" class="text-decoration-none text-dark">
+                <img class="rounded-4" src="./assets/Asset Page/produk image/Hunter Killer.png" alt="" width="100%" />
               </a>
-              <a href="./DetailProduk.html" class="card_harga">
+              <a href="" class="card_harga">
                 <p>$120</p>
               </a>
-              <a href="./DetailProduk.html" class="card_love">
+              <a href="" class="card_love">
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -258,18 +387,18 @@
                   </svg>
                 </p>
               </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
+              <p class="fw-normal text-start mt-2" style="font-size: 20px">Hunter Killer Fonts</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
+              <a href="" class="text-decoration-none">
+                <img class="rounded-4" src="./assets/Asset Page/produk image/Satonda.jpg" alt="" width="100%" />
               </a>
-              <a href="./DetailProduk.html" class="card_harga">
+              <a href="" class="card_harga">
                 <p>$120</p>
               </a>
-              <a href="./DetailProduk.html" class="card_love">
+              <a href="" class="card_love">
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -279,127 +408,23 @@
                   </svg>
                 </p>
               </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
-                    />
-                  </svg>
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
+              <p class="fw-normal text-start mt-2" style="font-size: 20px">Satonda Script Fonts</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
-                    />
-                  </svg>
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
-                    />
-                  </svg>
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
-                    />
-                  </svg>
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
-                    />
-                  </svg>
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
+          <h4 data-aos="zoom-in">May be you like</h4>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+        <div class="row mt-2">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
+              <a href="" class="text-decoration-none">
                 <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
               </a>
-              <a href="./DetailProduk.html" class="card_harga">
+              <a href="" class="card_harga">
                 <p>$120</p>
               </a>
-              <a href="./DetailProduk.html" class="card_love">
+              <a href="" class="card_love">
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -412,15 +437,15 @@
               <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
+              <a href="" class="text-decoration-none">
+                <img class="rounded-4" src="./assets/Asset Page/produk image/Hunter Killer.png" alt="" width="100%" />
               </a>
-              <a href="./DetailProduk.html" class="card_harga">
+              <a href="" class="card_harga">
                 <p>$120</p>
               </a>
-              <a href="./DetailProduk.html" class="card_love">
+              <a href="" class="card_love">
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -430,18 +455,18 @@
                   </svg>
                 </p>
               </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
+              <p class="fw-normal text-start mt-2" style="font-size: 20px">Hunter Killer Fonts</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
+              <a href="" class="text-decoration-none">
+                <img class="rounded-4" src="./assets/Asset Page/produk image/Satonda.jpg" alt="" width="100%" />
               </a>
-              <a href="./DetailProduk.html" class="card_harga">
+              <a href="" class="card_harga">
                 <p>$120</p>
               </a>
-              <a href="./DetailProduk.html" class="card_love">
+              <a href="" class="card_love">
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -451,70 +476,15 @@
                   </svg>
                 </p>
               </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
+              <p class="fw-normal text-start mt-2" style="font-size: 20px">Satonda Script Fonts</p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"
-                    />
-                  </svg>
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-5 mb-4">
-          <div class="text-center">
-            <ul class="list-unstyled d-flex justify-content-center">
-              <li class="">
-                <button class="btn_pagemenuleft">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="10px">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
-                  </svg>
-                </button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem Active">1</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem">2</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem">3</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem">4</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pagemenuright">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="10px">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
-                  </svg>
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!--Akhir item 1 -->
+    <!--Akhir Detail Produk item 1  -->
 
-    <!-- item 2 -->
+    <!--Detail Produk item 2-->
     <div id="prdk_item2">
       <div class="container">
         <div class="row">
@@ -537,7 +507,7 @@
       </div>
     </div>
     <img src="./assets/Asset Page/Group 179.svg" alt="" width="100%" class="img_grup179" />
-    <!--Akhir item 2 -->
+    <!--Akhir Detail Produk item 2-->
 
     <!--Footer-->
     <div id="footer">
@@ -881,5 +851,26 @@
       AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
