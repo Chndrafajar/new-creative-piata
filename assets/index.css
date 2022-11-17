@@ -474,18 +474,6 @@ body {
   text-align: center;
 }
 
-.dp_rightitem {
-  position: fixed;
-  width: auto;
-  z-index: 999;
-  height: 80vh;
-  background-color: #ffffff;
-  scroll-behavior: auto;
-  padding: 10px;
-  margin: 10px;
-  overflow: scroll;
-}
-
 .dp_btnbuy {
   padding-left: 100px;
 }
@@ -512,6 +500,22 @@ body {
   height: 40px;
   padding: 15px;
   width: 88%;
+}
+
+.btn_rivew {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn_rivew button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  background-color: #f5f5f5;
+  font-weight: 500;
 }
 
 /* Swiper js */
@@ -547,6 +551,41 @@ body {
   object-fit: cover;
 }
 
+.btn_next {
+  right: -10px;
+  left: auto;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn_prev {
+  right: auto;
+  left: -10px;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.pagination_.div[class^='swiper-button-next'] {
+  width: 20px;
+}
 /* Profil Item */
 
 .btn_follow {
@@ -719,10 +758,7 @@ body {
   #footer {
     margin-top: -80px;
   }
-  .dp_rightitem {
-    position: relative;
-    height: auto;
-  }
+
   .dp_cardlove {
     top: 2%;
   }
@@ -737,6 +773,9 @@ body {
   }
   .profil_shortitem {
     margin-top: -50px;
+  }
+  .position-sticky {
+    padding: 5px;
   }
 }
 
@@ -776,10 +815,6 @@ body {
     padding: 50px 0px;
     align-items: center;
     margin-top: -100px;
-  }
-  .dp_rightitem {
-    padding: 5px;
-    margin: 5px;
   }
   .dp_cardlove {
     top: -2%;
@@ -908,6 +943,9 @@ body {
     margin-top: 8px;
   }
   .inp_typeher {
-    width: 150px;
+    width: 190px;
+  }
+  .dp_btnbuy {
+    padding-left: 60px;
   }
 }
