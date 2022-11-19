@@ -279,6 +279,11 @@ body {
   display: none;
 }
 
+.foter_icon:hover {
+  width: 21.5px;
+  transition: 0.4s;
+}
+
 /* modal */
 
 .modal-content {
@@ -400,6 +405,14 @@ body {
 }
 
 /*Halaman Detail Produk */
+.dp_type {
+  margin-top: 80px;
+}
+
+.dp_type h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
 
 .dp_cardlove {
   position: absolute;
@@ -458,7 +471,7 @@ body {
 .dp_comercil {
   border: 1px solid #000;
   padding: 0 10px;
-  width: 80%;
+  width: 100%;
   height: 40px;
   font-style: normal;
 }
@@ -473,10 +486,6 @@ body {
   border: none;
   height: 50px;
   text-align: center;
-}
-
-.dp_btnbuy {
-  padding-left: 100px;
 }
 
 .btn_Buy {
@@ -554,7 +563,8 @@ body {
 }
 
 .btn_next {
-  right: 0px;
+  right: 10px;
+  margin-top: 10px;
   left: auto;
   position: absolute;
   top: 35%;
@@ -571,7 +581,8 @@ body {
 
 .btn_prev {
   right: auto;
-  left: 0px;
+  left: 10px;
+  margin-top: 10px;
   position: absolute;
   top: 35%;
   z-index: 1;
@@ -585,10 +596,11 @@ body {
   color: #000000;
 }
 
-.pagination_.div[class^='swiper-button-next'] {
-  width: 20px;
-}
 /* Profil Item */
+
+#profil_itm1 {
+  background-color: #fafafa;
+}
 
 .btn_follow {
   background-color: #ffffff;
@@ -638,6 +650,28 @@ body {
   display: flex;
 }
 
+.bottom_bar {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: -15px;
+  height: 80px;
+}
+
+.bottom_bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_bar ul li {
+  padding: 10px;
+  font-weight: 500;
+  color: #000;
+}
+
 /* Responsive */
 
 @media (min-width: 1975px) {
@@ -659,9 +693,7 @@ body {
   .card_right {
     margin-top: -190px;
   }
-  .dp_btnbuy {
-    padding-left: 40px;
-  }
+
   .dp_bookmark {
     top: 20%;
   }
@@ -670,6 +702,9 @@ body {
   }
   .profil_shortitem {
     padding-left: 180px;
+  }
+  .dp_type {
+    margin-top: 150px;
   }
 }
 
@@ -704,20 +739,27 @@ body {
   .dp_cardlove {
     top: -3%;
   }
-  .dp_btnbuy {
-    padding-left: 20px;
-  }
+
   .inp_typeher {
     width: 300px;
   }
   .dp_comercil {
-    width: 92%;
+    width: 100%;
   }
   .profil_shortitem {
     padding-left: 100px;
   }
   .btn_follow {
     width: 100px;
+  }
+  .btn_adcart {
+    width: 180px;
+  }
+  .btn_Buy {
+    width: 180px;
+  }
+  .dp_type {
+    margin-top: 20px;
   }
 }
 
@@ -772,9 +814,13 @@ body {
   .inp_typeher {
     width: 550px;
   }
-  .dp_btnbuy {
-    padding-left: 220px;
+  .btn_adcart {
+    width: 180px;
   }
+  .btn_Buy {
+    width: 180px;
+  }
+
   .profil_shortitem {
     padding-left: 0px;
   }
@@ -783,6 +829,9 @@ body {
   }
   .position-sticky {
     padding: 5px;
+  }
+  .dp_type {
+    margin-top: 10px;
   }
 }
 
@@ -828,9 +877,6 @@ body {
   }
   .inp_typeher {
     width: 350px;
-  }
-  .dp_btnbuy {
-    padding-left: 70px;
   }
 }
 
@@ -891,14 +937,12 @@ body {
   }
 
   .btn_adcart {
-    width: 130px;
+    width: 150px;
   }
   .btn_Buy {
-    width: 130px;
+    width: 150px;
   }
-  .dp_btnbuy {
-    padding-left: 50px;
-  }
+
   .dp_profilname {
     padding-left: 10px;
   }
@@ -951,9 +995,6 @@ body {
   }
   .inp_typeher {
     width: 190px;
-  }
-  .dp_btnbuy {
-    padding-left: 60px;
   }
 }
 
