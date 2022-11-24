@@ -7,7 +7,12 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Css -->
-    <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="stylesheet" href="../assets/index.css" />
+    <!-- Link Swiper's CSS -->
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8f933f0ad3.js" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   </head>
@@ -16,10 +21,10 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container item_Nav">
         <a class="navbar-brand" href="#">
-          <img src="./assets/Asset Page/Logo Creative Piata Hitam.svg" alt="" width="90px" height="30px" />
+          <img src="../assets/Asset Page/Logo Creative Piata Hitam.svg" alt="" width="90px" height="30px" />
         </a>
         <button class="btn_menubar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-          <img src="./assets/Asset Page/Icon/bars-solid.svg" alt="" width="20" height="20" />
+          <img src="../assets/Asset Page/Icon/bars-solid.svg" alt="" width="20" height="20" />
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mt-3">
@@ -44,13 +49,13 @@
           </div>
           <div class="px-2">
             <a href="">
-              <img src="./assets/Asset Page/Icon/cart-shopping-solid.svg" alt="" width="20px" height="20px" />
+              <img src="../assets/Asset Page/Icon/cart-shopping-solid.svg" alt="" width="20px" height="20px" />
             </a>
           </div>
           <div class="search-navBox">
             <input type="text" placeholder="Search Watercolor, Fonts, Templates and more" class="search-navTxt" />
             <a href="" class="search-navBtn">
-              <img src="./assets/Asset Page/Icon/Search_btn.svg" alt="" />
+              <img src="../assets/Asset Page/Icon/Search_btn.svg" alt="" />
             </a>
           </div>
         </div>
@@ -85,12 +90,12 @@
         <div class="search-sidebar">
           <input type="text" placeholder="Search....." class="search-sideTxt" />
           <a href="" class="search-sideBtn">
-            <img src="./assets/Asset Page/Icon/Search_btn.svg" alt="" />
+            <img src="../assets/Asset Page/Icon/Search_btn.svg" alt="" />
           </a>
           <div class="login_btn_sidebar">
             <a href="" class="fw-semibold text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a>
             <a href="" class="px-3">
-              <img src="./assets/Asset Page/Icon/cart-shopping-solid.svg" alt="" width="20px" height="20px" />
+              <img src="../assets/Asset Page/Icon/cart-shopping-solid.svg" alt="" width="20px" height="20px" />
             </a>
           </div>
         </div>
@@ -99,325 +104,111 @@
 
     <!--Akhir Sidebar-->
 
-    <!-- Filters Item -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- Dashboard Sidebar -->
+    <div class="dash_mobile">
+      <img src="../assets/Asset Page/Icon/bars-solid.svg" alt="" id="dash_btnMobile" />
+    </div>
+    <div id="dashboard">
+      <div class="dash_sidebar">
+        <div class="dash_menuBtn">
+          <img src="../assets/Asset Page/Icon/bars-solid.svg" width="20" alt="" id="menuBtn" />
+        </div>
+        <div class="dash_profil">
+          <div class="dash_profilImg">
+            <img src="../assets/Asset Page/profil image/photo profile nestype.jpg" alt="" width="100px" />
+            <div class="mt-2">
+              <button type="button" class="btn_uploadAvatar">Upload</button>
+            </div>
+          </div>
+          <div class="dash_profilTitle px-4 mt-3">
+            <h4>Nestype</h4>
+            <p>email@gmail.com</p>
+          </div>
+        </div>
+        <div class="dash_link">
+          <ul class="dash_nav">
+            <a href="./MyInformation.html" class="text-decoration-none text-dark">
+              <li>
+                <img src="../assets/Asset Page/dasboard user/account_.svg" alt="" />
+                <p>My Information</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="./SaveProduct.html">
+              <li>
+                <img src="../assets/Asset Page/dasboard user/save_.svg" alt="" />
+                <p>Save Product</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="./Messages.html">
+              <li>
+                <img src="../assets/Asset Page/dasboard user/messages_.svg" alt="" />
+                <p>Messages</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="./Purchases.html">
+              <li>
+                <img src="../assets/Asset Page/dasboard user/purchases_.svg" alt="" />
+                <p>Purchases</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="./ChangePassword.html">
+              <li>
+                <img src="../assets/Asset Page/dasboard user/password_.svg" alt="" />
+                <p>Change Password</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+              <li>
+                <img src="../assets/Asset Page/dasboard user/Logout_.svg" alt="" />
+                <p>Logout</p>
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
-      <div class="offcanvas-body">
+      <div class="dash_content">
+        <h1>My Information</h1>
         <form action="">
-          <div class="mt-4 px-4">
-            <h6 class="mt-5 fw-normal">Categories</h6>
-            <select name="" id="" class="select_form mt-3">
-              <option value="">All</option>
-              <option value="">Fonts</option>
-              <option value="">Graphics</option>
-              <option value="">Templates</option>
-              <option value="">Blogs</option>
-              <option value="">Free Asset</option>
-            </select>
+          <div class="dash_info">
+            <label for="">Name</label>
+            <div class="dash_infoForm">
+              <input type="text" placeholder="Nestype" class="dash_infoTxt" />
+              <a href="" class="dash_infoBtn"> Edit </a>
+            </div>
           </div>
-          <div class="mt-4 px-4">
-            <!-- $1 - $10 -->
-            <input type="checkbox" id="" name="" value="" />
-            <label for=""> $1 - $10</label><br />
-            <!--Akhir $1 - $10 -->
-
-            <!-- $10 - $25 -->
-            <input class="mt-2" type="checkbox" id="" name="" value="" />
-            <label for=""> $10 - $25</label><br />
-            <!--Akhir $10 - $25 -->
-
-            <!-- $25 - $50 -->
-            <input class="mt-2" type="checkbox" id="" name="" value="" />
-            <label for=""> $25 - $50</label><br />
-            <!--Akhir $25 - $50 -->
-
-            <!-- $50+ -->
-            <input class="mt-2" type="checkbox" id="" name="" value="" />
-            <label for=""> $50+</label>
-            <!--Akhir $50+ -->
+          <div class="dash_info">
+            <label for="">Country</label>
+            <div class="dash_infoForm">
+              <input type="text" placeholder="Country" class="dash_infoTxt" />
+              <a href="" class="dash_infoBtn"> Edit </a>
+            </div>
           </div>
-          <div class="px-4" style="margin-top: -30px">
-            <h6 class="mt-5 fw-normal">Theme</h6>
-            <select name="" id="" class="select_form mt-3">
-              <option value="">New Year</option>
-              <option value="">Fonts</option>
-              <option value="">Graphics</option>
-              <option value="">Templates</option>
-              <option value="">Blogs</option>
-              <option value="">Free Asset</option>
-            </select>
+          <div class="dash_info">
+            <label for="">Email</label>
+            <div class="dash_infoForm">
+              <input type="email" placeholder="email@gmail.com" class="dash_infoTxt" />
+              <a href="" class="dash_infoBtn"> Edit </a>
+            </div>
+          </div>
+          <div class="dash_info">
+            <label for="">Your Company</label>
+            <div class="dash_infoForm">
+              <input type="text" placeholder="email@gmail.com" class="dash_infoTxt" />
+              <a href="" class="dash_infoBtn"> Edit </a>
+            </div>
+          </div>
+          <div class="dash_infoBtnSve">
+            <button type="submit">Save</button>
           </div>
         </form>
-        <div class="text-center">
-          <button type="submit" class="mt-5 btn_modallogin">Apply</button>
-        </div>
       </div>
     </div>
-    <!--Akhir Filters Item -->
 
-    <!-- item 1 -->
-    <div id="prdk_item1">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-6" data-aos="zoom-in">
-            <h3 class="fw-normal" style="color: #5a5a5a">Showing results for <a class="fw-semibold text-decoration-none" style="color: #5a5a5a">mockup</a></h3>
-          </div>
-          <div class="col-6 p-0 text-end" data-aos="zoom-in">
-            <div style="padding-right: 30px">
-              <a href="" class="text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" style="margin-bottom: 5px">
-                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                  <path
-                    d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"
-                  />
-                </svg>
-              </a>
-              <a href="" class="fw-normal text-dark text-decoration-none ps-1 fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Filters </a>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-            <div class="card text-decoration-none border-0">
-              <a href="./DetailProduk.html">
-                <img class="rounded-4" src="./assets/Asset Page/produk image/Luxury Signature Font.jpg" alt="" width="100%" />
-              </a>
-              <a href="./DetailProduk.html" class="card_harga">
-                <p>$120</p>
-              </a>
-              <a href="./DetailProduk.html" class="card_love">
-                <p>
-                  <img src="./assets/Asset Page/Icon/heart-regular.svg" alt="" width="50%" />
-                </p>
-              </a>
-              <p class="fw-normal text-start mt-2" style="font-size: 20px">Annbela Script Fonts</p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-5 mb-4">
-          <div class="text-center">
-            <ul class="list-unstyled d-flex justify-content-center">
-              <li class="">
-                <button class="btn_pagemenuleft">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="10px">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
-                  </svg>
-                </button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem Active">1</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem">2</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem">3</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pageitem">4</button>
-              </li>
-              <li class="ps-2">
-                <button class="btn_pagemenuright">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="10px">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Akhir item 1 -->
+    <!-- Dashboard Sidebar -->
 
-    <!-- item 2 -->
+    <!--Profil Owner item 2-->
     <div id="prdk_item2">
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-12 text-center d-flex justify-content-center" data-aos="zoom-in">
             <h5 class="fw-normal" style="width: 600px">Send me exclusive offers, unique ideas and personal tips for shopping and selling on Creative Piata.</h5>
@@ -437,8 +228,8 @@
         </div>
       </div>
     </div>
-    <img src="./assets/Asset Page/Group 179.svg" alt="" width="100%" class="img_grup179" />
-    <!--Akhir item 2 -->
+    <img src="../assets/Asset Page/Group 179.svg" alt="" width="100%" class="img_grup179" />
+    <!--Akhir Profil Owner item 2-->
 
     <!--Footer-->
     <div id="footer">
@@ -500,13 +291,13 @@
               <div class="">
                 <h5 class="text-dark mb-3 fw-bold">Get in Touch</h5>
                 <a href="" class="text-decoration-none">
-                  <img src="./assets/Asset Page/Icon/facebook.svg" alt="" width="20px" class="foter_icon" />
+                  <img src="../assets/Asset Page/Icon/facebook.svg" alt="" width="20px" class="foter_icon" />
                 </a>
                 <a href="" class="text-decoration-none px-2">
-                  <img src="./assets/Asset Page/Icon/instagram.svg" alt="" width="20px" class="foter_icon" />
+                  <img src="../assets/Asset Page/Icon/instagram.svg" alt="" width="20px" class="foter_icon" />
                 </a>
                 <a href="" class="text-decoration-none">
-                  <img src="./assets/Asset Page/Icon/pinterest.svg" alt="" width="20px" class="foter_icon" />
+                  <img src="../assets/Asset Page/Icon/pinterest.svg" alt="" width="20px" class="foter_icon" />
                 </a>
               </div>
             </div>
@@ -611,13 +402,13 @@
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
                     <div class="accordion-body">
                       <a href="" class="text-decoration-none">
-                        <img src="./assets/Asset Page/Icon/facebook.svg" alt="" width="20px" />
+                        <img src="../assets/assets/Asset Page/Icon/facebook.svg" alt="" width="20px" />
                       </a>
                       <a href="" class="text-decoration-none px-2">
-                        <img src="./assets/Asset Page/Icon/instagram.svg" alt="" width="20px" />
+                        <img src="../assets/assets/Asset Page/Icon/instagram.svg" alt="" width="20px" />
                       </a>
                       <a href="" class="text-decoration-none">
-                        <img src="./assets/Asset Page/Icon/pinterest.svg" alt="" width="20px" />
+                        <img src="../assets/assets/Asset Page/Icon/pinterest.svg" alt="" width="20px" />
                       </a>
                     </div>
                   </div>
@@ -746,6 +537,23 @@
       </div>
     </div>
     <!-- Akhir Reset Password -->
+
+    <!-- tooggle sidebar active -->
+    <script>
+      let btn = document.querySelector('#menuBtn');
+      let btnMobile = document.querySelector('#dash_btnMobile');
+      let sidebar = document.querySelector('.dash_sidebar');
+
+      btnMobile.onclick = function () {
+        sidebar.classList.toggle('mobile_active');
+        dashPurchases.classList.toggle('mobile_active');
+      };
+
+      btn.onclick = function () {
+        sidebar.classList.toggle('active');
+      };
+    </script>
+    <!-- tooggle sidebar active -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
