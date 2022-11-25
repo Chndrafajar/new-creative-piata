@@ -106,12 +106,13 @@
 
     <!-- Dashboard Sidebar -->
     <div class="dash_mobile">
-      <img src="../assets/Asset Page/Icon/bars-solid.svg" alt="" id="dash_btnMobile" />
+      <span id="dash_btnMobile">Menu</span>
     </div>
     <div id="dashboard">
       <div class="dash_sidebar">
         <div class="dash_menuBtn">
-          <img src="../assets/Asset Page/Icon/bars-solid.svg" width="20" alt="" id="menuBtn" />
+          <img src="../assets/Asset Page/Icon/minus-solid.svg" width="20" alt="" id="menuBtn" />
+          <img src="../assets/Asset Page/Icon/bars-solid.svg" alt="" id="sideHide" />
         </div>
         <div class="dash_profil">
           <div class="dash_profilImg">
@@ -588,11 +589,17 @@
     <script>
       let btn = document.querySelector('#menuBtn');
       let btnMobile = document.querySelector('#dash_btnMobile');
+      let sidebarHide = document.querySelector('#sideHide');
       let sidebar = document.querySelector('.dash_sidebar');
+      let content = document.querySelector('.dash_content');
 
       btnMobile.onclick = function () {
         sidebar.classList.toggle('mobile_active');
-        dashPurchases.classList.toggle('mobile_active');
+        content.classList.toggle('mobile_active');
+      };
+
+      sidebarHide.onclick = function () {
+        sidebar.classList.toggle('active');
       };
 
       btn.onclick = function () {
