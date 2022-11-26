@@ -1400,10 +1400,8 @@ body {
   }
 
   .profil_shortitem {
-    padding-left: 0px;
-  }
-  .profil_shortitem {
     margin-top: -50px;
+    padding-left: 0px;
   }
   .position-sticky {
     padding: 5px;
@@ -1642,10 +1640,7 @@ body {
   .dash_product {
     width: 100%;
   }
-  .dash_sidebar {
-    display: none;
-    transition: all 0.5s ease;
-  }
+
   .dash_contentProductItem .dash_ProductImg {
     width: 350px;
   }
@@ -1659,6 +1654,10 @@ body {
     display: flex;
   }
   /* sidebar mobile active */
+  .dash_sidebar {
+    display: none;
+    transition: all 0.5s ease;
+  }
   #dashboard {
     margin-top: 0px;
   }
