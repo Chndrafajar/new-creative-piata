@@ -701,6 +701,12 @@ body {
   }
 
   .subs_email {
-    width: 180px;
+    width: 150px;
+  }
+  .btn_Buy {
+    width: 130px;
+  }
+  .btn_adcart {
+    width: 130px;
   }
 }

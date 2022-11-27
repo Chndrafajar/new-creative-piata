@@ -230,9 +230,8 @@ body {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-
 .dash_mobile {
-  width: 80px;
+  width: 60px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 30px;
@@ -247,6 +246,9 @@ body {
   font-size: 22px;
 }
 
+.dash_mobile img {
+  width: 30px;
+}
 /* dashboard sidebar hide */
 .dash_sidebar.active #sideHide {
   display: block;

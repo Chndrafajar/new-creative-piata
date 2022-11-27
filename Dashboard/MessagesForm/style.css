@@ -364,7 +364,7 @@ body {
 }
 
 .dash_mobile {
-  width: 80px;
+  width: 60px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 30px;
@@ -377,6 +377,10 @@ body {
   font-weight: 600;
   cursor: pointer;
   font-size: 22px;
+}
+
+.dash_mobile img {
+  width: 30px;
 }
 
 /* dashboard sidebar hide */
@@ -507,9 +511,9 @@ body {
 }
 
 .btnSend {
-  position: absolute;
-  top: 850px;
-  left: 61%;
+  position: relative;
+  top: -80px;
+  left: 51%;
   width: 80px;
 }
 
@@ -526,12 +530,6 @@ body {
 @media (min-width: 1975px) {
   .img_grup179 {
     margin-top: -170px;
-  }
-}
-
-@media (min-width: 1764px) {
-  .btnSend {
-    top: 830px;
   }
 }
 
@@ -558,14 +556,7 @@ body {
     width: 90%;
   }
   .btnSend {
-    top: 820px;
-    left: 80%;
-  }
-}
-
-@media (max-width: 1312px) {
-  .btnSend {
-    top: 850px;
+    left: 78%;
   }
 }
 
@@ -576,12 +567,8 @@ body {
   #footer {
     margin-top: -80px;
   }
-}
-
-@media (max-width: 1121px) {
   .btnSend {
-    top: 850;
-    left: 78%;
+    left: 74%;
   }
 }
 
@@ -602,19 +589,20 @@ body {
   #footer {
     margin-top: -80px;
   }
+  .btnSend {
+    left: 70%;
+  }
 }
 
 @media (max-width: 945px) {
-  .btnSend {
-    top: 870px;
-    left: 78%;
-  }
 }
 
 @media (max-width: 852px) {
   .btnSend {
-    top: 900px;
-    left: 78%;
+    left: 65%;
+  }
+  .dash_sidebar.active {
+    width: 100px;
   }
 }
 
@@ -641,26 +629,20 @@ body {
   .messages_formBox textarea {
     width: 100%;
   }
-  .btnSend {
-    top: 900px;
-    left: 80%;
+  .dash_sidebar.active {
+    width: 120px;
   }
 }
 
 @media (max-width: 688px) {
-  .btnSend {
-    top: 950px;
-    left: 80%;
+  .dash_sidebar.active {
+    width: 140px;
   }
 }
 
 @media (max-width: 620px) {
-  .dash_content.mobile_active .btnSend {
-    top: 880px;
-  }
-  .btnSend {
-    top: 1100px;
-    left: 75%;
+  .dash_sidebar.active {
+    width: 155px;
   }
 }
 
@@ -733,7 +715,7 @@ body {
   }
 
   .dash_sidebar.mobile_active.active {
-    width: 80px;
+    width: 150px;
   }
 
   .dash_sidebar.mobile_active.active .dash_profil {
@@ -801,26 +783,38 @@ body {
     transform: translate(240%, 10%);
   }
   .btnSend {
-    top: 920px;
     left: 75%;
+  }
+}
+
+@media (max-width: 527px) {
+  .dash_sidebar.mobile_active.active {
+    width: 180px;
   }
 }
 
 @media (max-width: 450px) {
   .dash_sidebar.mobile_active.active {
-    width: 90px;
-  }
-  .dash_content.mobile_active .btnSend {
-    top: 930px;
-    left: 78%;
+    width: 220px;
   }
   .btnSend {
     left: 70%;
   }
 }
-
 @media (max-width: 398px) {
   .subs_email {
     width: 150px;
+  }
+  .dash_sidebar.mobile_active.active {
+    width: 250px;
+  }
+  .btnSend {
+    left: 65%;
+  }
+}
+
+@media (max-width: 300px) {
+  .btnSend {
+    left: 65%;
   }
 }
