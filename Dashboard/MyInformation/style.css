@@ -704,6 +704,18 @@ body {
   #dashboard {
     margin-top: 20px;
   }
+  .search-sidebar {
+    width: 210px;
+  }
+  .search-sideTxt {
+    width: 75%;
+  }
+  .modal-dialog {
+    padding-left: 0px;
+  }
+  .login_btn_sidebar {
+    transform: translate(240%, 10%);
+  }
 }
 
 @media (max-width: 398px) {
