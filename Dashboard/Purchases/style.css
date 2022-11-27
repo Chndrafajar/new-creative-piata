@@ -755,6 +755,9 @@ body {
     width: 130px;
     height: 80px;
   }
+  #dashboard {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 417px) {

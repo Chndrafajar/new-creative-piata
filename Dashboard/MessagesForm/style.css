@@ -785,6 +785,9 @@ body {
   .btnSend {
     left: 75%;
   }
+  #dashboard {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 527px) {

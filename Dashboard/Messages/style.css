@@ -815,6 +815,9 @@ body {
   .messages_delete {
     width: 15px;
   }
+  #dashboard {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 398px) {

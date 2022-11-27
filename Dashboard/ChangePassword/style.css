@@ -716,6 +716,9 @@ body {
   .modal-dialog {
     padding-left: 0px;
   }
+  #dashboard {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 398px) {

@@ -784,6 +784,9 @@ body {
     transition: all 0.5s ease;
   }
   /* sidebar mobile */
+  #dashboard {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 549px) {
