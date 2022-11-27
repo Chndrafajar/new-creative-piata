@@ -592,6 +592,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .dash_productLove {
+    left: 79%;
+  }
 }
 
 @media (max-width: 895px) {
@@ -804,6 +807,9 @@ body {
   }
   .dash_sidebar.mobile_active.active {
     width: 250px;
+  }
+  .dash_productLove {
+    left: 85%;
   }
 }
 
