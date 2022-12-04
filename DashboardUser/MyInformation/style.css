@@ -445,6 +445,7 @@ body {
 .dash_content {
   flex: auto;
   padding: 40px;
+  padding-top: 10px;
 }
 /* My Information */
 
