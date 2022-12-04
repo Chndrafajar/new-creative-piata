@@ -701,12 +701,21 @@ body {
   }
 
   .subs_email {
-    width: 150px;
+    width: 180px;
   }
   .btn_Buy {
     width: 130px;
   }
   .btn_adcart {
     width: 130px;
+  }
+}
+
+@media (max-width: 340px) {
+  .subs_email {
+    width: 140px;
+  }
+  .search-sideTxt {
+    width: 50%;
   }
 }

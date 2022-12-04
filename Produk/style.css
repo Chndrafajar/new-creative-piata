@@ -407,6 +407,21 @@ body {
 
 @media (max-width: 398px) {
   .subs_email {
-    width: 150px;
+    width: 180px;
+  }
+  .search-sidebar {
+    width: 200px;
+  }
+  .search-sideTxt {
+    width: 75%;
+  }
+}
+
+@media (max-width: 340px) {
+  .subs_email {
+    width: 140px;
+  }
+  .search-sideTxt {
+    width: 50%;
   }
 }

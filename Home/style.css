@@ -515,3 +515,9 @@ body {
     padding-left: 0px;
   }
 }
+
+@media (max-width: 340px) {
+  .search-sideTxt {
+    width: 50%;
+  }
+}

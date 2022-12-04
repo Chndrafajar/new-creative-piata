@@ -1659,7 +1659,7 @@ body {
     transition: all 0.5s ease;
   }
   #dashboard {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   .dash_sidebar.mobile_active {

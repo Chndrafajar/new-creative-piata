@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creative Piata</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Link Swiper's CSS -->
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8f933f0ad3.js" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container item_Nav">
+        <a class="navbar-brand" href="#">
+          <img src="../Asset Page/Logo Creative Piata Hitam.svg" alt="" width="90px" height="30px" />
+        </a>
+        <button class="btn_menubar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <img src="../Asset Page/Icon/bars-solid.svg" alt="" width="20" height="20" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mt-3">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-4" href="../../Produk/index.html">Fonts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-4" href="../../Produk/index.html">Graphics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-4" href="../../Produk/index.html">Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-4" href="../../Produk/index.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-4" href="../../Produk/index.html">Free Asset</a>
+            </li>
+          </ul>
+          <div class="header_btn">
+            <div>
+              <a href="">
+                <img src="../Asset Page/dasboard store icon/my shop.svg" alt="" width="31px" height="31px" />
+              </a>
+            </div>
+            <div>
+              <a href="" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                <img src="../Asset Page/profil image/photo profile nestype.jpg" alt="" width="28px" height="28px" style="border-radius: 50%" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="../Asset Page/Icon/cart-shopping-solid.svg" alt="" width="23px" height="23px" />
+              </a>
+            </div>
+          </div>
+
+          <div class="search-navBox">
+            <input type="text" placeholder="Search Watercolor, Fonts, Templates and more" class="search-navTxt" />
+            <a href="" class="search-navBtn">
+              <img src="../Asset Page/Icon/Search_btn.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir Header-->
+
+    <!--Sidebar-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Categories</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../../Produk/index.html">Fonts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../../Produk/index.html">Graphics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../../Produk/index.html">Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../../Produk/index.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../../Produk/index.html">Free Asset</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <div class="search-sidebar">
+            <input type="text" placeholder="Search....." class="search-sideTxt" />
+            <a href="" class="search-sideBtn">
+              <img src="../Asset Page/Icon/Search_btn.svg" alt="" />
+            </a>
+          </div>
+          <div class="sidebar_btn px-3">
+            <div>
+              <a href="">
+                <img src="../Asset Page/dasboard store icon/my shop.svg" alt="" width="31px" height="31px" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="../Asset Page/profil image/photo profile nestype.jpg" alt="" width="28px" height="28px" style="border-radius: 50%" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="../Asset Page/dasboard store icon/cart-shopping-solid (1).svg" alt="" width="23px" height="23px" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Akhir Sidebar-->
+
+    <!-- Filters Item -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form action="">
+          <div class="mt-4 px-4">
+            <h6 class="mt-5 fw-normal">Choose Range</h6>
+            <input type="text" placeholder="Past 7 Days" class="select_form mt-3" />
+            <h6 class="mt-4 fw-normal">Or</h6>
+            <div class="date_form mt-3">
+              <input type="date" class="select_form" />
+              <div class="date_to">
+                <h6 class="fw-normal">to</h6>
+              </div>
+              <input type="date" class="select_form" />
+            </div>
+          </div>
+        </form>
+        <div class="text-center">
+          <button type="submit" class="mt-5 btn_modallogin">Apply</button>
+        </div>
+      </div>
+    </div>
+    <!--Akhir Filters Item -->
+
+    <!-- Dashboard Sidebar -->
+    <div class="dash_mobile">
+      <img src="../Asset Page/Icon/gear-solid.svg" alt="" id="dash_btnMobile" />
+    </div>
+    <div id="dashboard">
+      <div class="dash_sidebar">
+        <div class="dash_menuBtn">
+          <img src="../Asset Page/Icon/minus-solid.svg" width="20" alt="" id="menuBtn" />
+          <img src="../Asset Page/Icon/bars-solid.svg" alt="" id="sideHide" />
+        </div>
+        <div class="dash_profil">
+          <div class="dash_profilImg">
+            <img src="../Asset Page/profil image/photo profile nestype.jpg" alt="" width="100px" />
+            <div class="mt-2">
+              <button type="button" class="btn_uploadAvatar">Upload</button>
+            </div>
+          </div>
+          <div class="dash_profilTitle px-4 mt-3">
+            <h4>Nestype</h4>
+            <p>email@gmail.com</p>
+          </div>
+        </div>
+        <div class="dash_link">
+          <ul class="dash_nav">
+            <a href="../Analytics/index.html" class="text-decoration-none text-dark">
+              <li>
+                <img src="../Asset Page/dasboard store icon/analitc.svg" alt="" />
+                <p>Analytics</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="../MyProduct/index.html">
+              <li>
+                <img src="../Asset Page/dasboard store icon/my product.svg" alt="" />
+                <p>My Product</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="../Payouts/index.html">
+              <li>
+                <img src="../Asset Page/dasboard store icon/payou.svg" alt="" />
+                <p>Payouts</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="../ShopProfile/index.html">
+              <li>
+                <img src="../Asset Page/dasboard store icon/shop profile.svg" alt="" />
+                <p>Shop Profile</p>
+              </li>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+              <li>
+                <img src="../Asset Page/dasboard user/Logout_.svg" alt="" />
+                <p>Logout</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="dash_content">
+        <div class="d-flex justify-content-between mt-2">
+          <h2>My Shop</h2>
+          <div>
+            <a href="" class="text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" style="margin-bottom: 5px">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"
+                />
+              </svg>
+            </a>
+            <a href="" class="fw-normal text-dark text-decoration-none ps-1 fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Filters </a>
+          </div>
+        </div>
+        <div class="analytics_total">
+          <div class="analytics_totalItem">
+            <h5>TOTAL EARNING</h5>
+            <div class="money_total">
+              <span>$</span>
+              <h4>1.250</h4>
+            </div>
+          </div>
+          <div class="analytics_totalItem">
+            <h5>PRODUCT SOLD</h5>
+            <h4>174</h4>
+          </div>
+          <div class="analytics_totalItem">
+            <h5>TOTAL PRODUCT</h5>
+            <h4>58</h4>
+          </div>
+        </div>
+        <figure class="highcharts-figure">
+          <div id="container"></div>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Dashboard Sidebar -->
+
+    <!--Profil Owner item 2-->
+    <div id="prdk_item2">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12 text-center d-flex justify-content-center" data-aos="zoom-in">
+            <h5 class="fw-normal" style="width: 600px">Send me exclusive offers, unique ideas and personal tips for shopping and selling on Creative Piata.</h5>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12 d-flex justify-content-center" data-aos="zoom-in">
+            <form action="">
+              <div class="d-flex">
+                <input type="email" placeholder="Email" class="subs_email" />
+                <div class="px-3">
+                  <button type="submit" class="btn_subscribe">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="../Asset Page/Group 179.svg" alt="" width="100%" class="img_grup179" />
+    <!--Akhir Profil Owner item 2-->
+
+    <!--Footer-->
+    <div id="footer">
+      <footer class="bd-footer blog-footer pt-5 mt-5 p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mt-4" data-aos="zoom-in">
+              <div class="">
+                <h5 class="text-dark mb-3 fw-bold">RESOURCE</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="" class="text-decoration-none text-dark">Open Shop</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">Join Affiliate</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">Free Goods</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">Premium</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 mt-4" data-aos="zoom-in">
+              <div class="">
+                <h5 class="text-dark mb-3 fw-bold">COMPANY</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="" class="text-decoration-none text-dark">Terms & Conditions</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">About</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">Licenses</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">Privacy Police</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 mt-4" data-aos="zoom-in">
+              <div class="">
+                <h5 class="text-dark mb-3 fw-bold">GUIDES</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="" class="text-decoration-none text-dark">Help Center</a>
+                  </li>
+                  <li class="mb-2 text-dark">
+                    <a href="" class="text-decoration-none text-dark">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 mt-4" data-aos="zoom-in">
+              <div class="">
+                <h5 class="text-dark mb-3 fw-bold">Get in Touch</h5>
+                <a href="" class="text-decoration-none">
+                  <img src="../Asset Page/Icon/facebook.svg" alt="" width="20px" class="foter_icon" />
+                </a>
+                <a href="" class="text-decoration-none px-2">
+                  <img src="../Asset Page/Icon/instagram.svg" alt="" width="20px" class="foter_icon" />
+                </a>
+                <a href="" class="text-decoration-none">
+                  <img src="../Asset Page/Icon/pinterest.svg" alt="" width="20px" class="foter_icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="footer_mobile">
+      <footer>
+        <div class="container-fluid">
+          <div class="row mt-3">
+            <div class="col-md-3 mt-5">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item border-0" style="background-color: #ebf4f1">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-dark fw-bold border-0" style="background-color: #ebf4f1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      RESOURCE
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <a href="" class="text-decoration-none text-dark">Open Shop</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">Join Affiliate</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">Free Goods</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">Premium</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="accordion" id="accordionExample1">
+                <div class="accordion-item border-0" style="background-color: #ebf4f1">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-dark fw-bold border-0" style="background-color: #ebf4f1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      COMPANY
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <a href="" class="text-decoration-none text-dark">Terms & Conditions</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">About</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">Licenses</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">Privacy Police</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="accordion" id="accordionExample2">
+                <div class="accordion-item border-0" style="background-color: #ebf4f1">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-dark fw-bold border-0" style="background-color: #ebf4f1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      GUIDES
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <a href="" class="text-decoration-none text-dark">Help Center</a>
+                        </li>
+                        <li class="mb-2 text-dark">
+                          <a href="" class="text-decoration-none text-dark">Blog</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="accordion" id="accordionExample3">
+                <div class="accordion-item border-0" style="background-color: #ebf4f1">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-dark fw-bold border-0" style="background-color: #ebf4f1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      Get in Touch
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
+                    <div class="accordion-body">
+                      <a href="" class="text-decoration-none">
+                        <img src="../Asset Page/Icon/facebook.svg" alt="" width="20px" />
+                      </a>
+                      <a href="" class="text-decoration-none px-2">
+                        <img src="../Asset Page/Icon/instagram.svg" alt="" width="20px" />
+                      </a>
+                      <a href="" class="text-decoration-none">
+                        <img src="../Asset Page/Icon/pinterest.svg" alt="" width="20px" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="fw-normal">© 2022 Creative Piata. All rights reserved.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Akhir Footer-->
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-5">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-center fw-bold fs-7">Welcome</h1>
+            <form action="">
+              <div class="mt-4 text-center">
+                <input type="email" placeholder="Email" class="modal_email" />
+              </div>
+              <div class="text-center mt-4">
+                <input type="password" placeholder="Password" class="modal_password" />
+              </div>
+            </form>
+            <p class="mt-4 text-start text-decoration-none text-dark px-4 fs-6 fw-normal">
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#ResetPassword">Forgot your password?</a>
+            </p>
+
+            <div class="text-center">
+              <button type="submit" class="mt-3 btn_modallogin">Login</button>
+            </div>
+            <div class="mt-4 text-center">
+              <a href="" class="text-decoration-none fs-6 fw-normal text-dark" data-bs-toggle="modal" data-bs-target="#signupmodal">Create an account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Login -->
+
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-5">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-center fw-bold fs-7">Welcome</h1>
+            <form action="">
+              <div class="name_form px-4 mt-4">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div class="mt-4 px-4">
+                <select name="" id="" class="select_form">
+                  <option value="">Country</option>
+                  <option value="">Indonesia</option>
+                  <option value="">USA</option>
+                  <option value="">India</option>
+                </select>
+              </div>
+              <div class="mt-4 text-center">
+                <input type="email" placeholder="Email" class="modal_email" />
+              </div>
+              <div class="text-center mt-4">
+                <input type="password" placeholder="Password" class="modal_password" />
+              </div>
+              <div class="text-center mt-4">
+                <input type="password" placeholder="Repeat Password" class="modal_password" />
+              </div>
+            </form>
+            <div class="text-center">
+              <button type="submit" class="mt-5 btn_modallogin">Sign Up</button>
+            </div>
+            <div class="mt-4 text-center">
+              <a href="" class="text-decoration-none fs-6 fw-normal text-dark" data-bs-toggle="modal" data-bs-target="#loginmodal">Have a account ? Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Sign Up -->
+
+    <!-- Modal Reset Password -->
+    <div class="modal fade" id="ResetPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-5">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-start px-4 fw-bold fs-7">Reset</h1>
+            <h1 class="text-start px-4 fw-bold fs-7">Password</h1>
+            <p class="px-4">Enter your email address and we'll send you a link to reset your password.</p>
+            <form action="">
+              <div class="mt-4 text-center">
+                <input type="email" placeholder="Email" class="modal_email" />
+              </div>
+            </form>
+            <div class="text-center mt-2">
+              <button type="submit" class="mt-3 btn_modallogin">Submit</button>
+            </div>
+            <div class="mt-4 text-center">
+              <a href="" class="text-decoration-none fs-6 fw-normal text-dark" data-bs-toggle="modal" data-bs-target="#signupmodal">Create an account</a>
+            </div>
+            <div class="mt-3 text-center">
+              <a href="" class="text-decoration-none fs-6 fw-normal text-dark" data-bs-toggle="modal" data-bs-target="#loginmodal">Have a account ? Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Reset Password -->
+
+    <!-- tooggle sidebar active -->
+    <script>
+      let btn = document.querySelector('#menuBtn');
+      let btnMobile = document.querySelector('#dash_btnMobile');
+      let sidebarHide = document.querySelector('#sideHide');
+      let sidebar = document.querySelector('.dash_sidebar');
+      let content = document.querySelector('.dash_content');
+
+      btnMobile.onclick = function () {
+        sidebar.classList.toggle('mobile_active');
+        content.classList.toggle('mobile_active');
+      };
+
+      sidebarHide.onclick = function () {
+        sidebar.classList.toggle('active');
+        content.classList.toggle('active');
+      };
+
+      btn.onclick = function () {
+        sidebar.classList.toggle('active');
+        content.classList.toggle('active');
+      };
+    </script>
+    <!-- tooggle sidebar active -->
+
+    <!-- highchart js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="./script.js"></script>
+    <!-- highchart js -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+  </body>
+</html>
